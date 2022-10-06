@@ -5,9 +5,10 @@ $("#currentDay").text(currentDate);
 var currentTime = moment().hour();
 console.log(currentTime);
 
-var presentTime = document.querySelector("present");
-var futureTime = document.querySelector("future");
-var pastTime = document.querySelector("past");
+var presentTime = document.querySelector(".present");
+var futureTime = document.querySelector(".future");
+var pastTime = document.querySelector(".past");
+var descriptionEvent = document.querySelector(".description");
 
 var hour = {9: '', 10: '', 11: '', 12: '', 13: '', 14: '', 15: '', 16: '', 17: ''};
 console.log(Object.keys(hour));
@@ -19,19 +20,16 @@ console.log(Object.keys(hour));
 
 //time interval
 function setStatus(){
-    for (var i = 0; i < hour.length; i++); {
+    for (let i = 9; i < 18; i++); {
     
     if (currentTime == hour[0]) {
-        console.log(i);
-        $('description').setAttribute('present');
+        $("# i").addClass(".present");
     } 
     else if (currentTime < hour[0]) {
-        console.log(i);
-        $('description').setAttribute('future');
+        $(".description").addClass(".future");
     } 
     else if (currentTime > hour[0]) {
-        console.log(i);
-        $('description').setAttribute('past');
+        $(".description").addClass(".past");
     }
     }
 };
