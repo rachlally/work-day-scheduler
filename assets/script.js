@@ -10,6 +10,7 @@ var futureTime = document.querySelector(".future");
 var pastTime = document.querySelector(".past");
 var descriptionEvent = document.querySelector(".description");
 
+
 var hour = {9: '', 10: '', 11: '', 12: '', 13: '', 14: '', 15: '', 16: '', 17: ''};
 console.log(Object.keys(hour));
 
@@ -20,16 +21,14 @@ console.log(Object.keys(hour));
 
 //time interval
 function setStatus(){
-    for (let i = 9; i < 18; i++); {
+    for (var i = 9; i < 18; i++) {
     
-    if (currentTime == i) {
-        $("#" + i).addClass("present");
-    } 
-    else if (currentTime < i) {
-        $("#" + i).addClass("future");
-    } 
-    else if (currentTime > i) {
+    if (i < currentTime) {
         $("#" + i).addClass("past");
+    } else if (i === currentTime) {
+        $("#" + i).addClass("present");
+    } else {
+        $("#" + i).addClass("future");
     }
     }
 };
