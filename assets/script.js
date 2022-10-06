@@ -47,20 +47,20 @@ console.log(Object.keys(hour));
 
     }*/
 
-    function renderEvents() {
+   /* function renderEvents() {
         var storedEvent = JSON.parse(localStorage.getItem("event"));
         if (storedEvent !== null) {
             document.getElementById("#9").val() = storedEvent.text;
             console.log(storedEvent);
         }
-    }
+    }*/
 
 //check current time to update event status
 function setStatus(){
     for (var i = 9; i < 18; i++) {
     
     if (i < currentTime) {
-        $("#" + i).addClass("past");
+        $("#" + i).addClass("past"); 
     } else if (i === currentTime) {
         $("#" + i).addClass("present");
     } else {
@@ -80,3 +80,4 @@ setStatus();
 //function init() to get stored items then render to page
 
 //}
+
