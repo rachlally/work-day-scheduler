@@ -22,14 +22,14 @@ console.log(Object.keys(hour));
 function setStatus(){
     for (let i = 9; i < 18; i++); {
     
-    if (currentTime == hour[0]) {
-        $("# i").addClass(".present");
+    if (currentTime == i) {
+        $("#" + i).addClass("present");
     } 
-    else if (currentTime < hour[0]) {
-        $(".description").addClass(".future");
+    else if (currentTime < i) {
+        $("#" + i).addClass("future");
     } 
-    else if (currentTime > hour[0]) {
-        $(".description").addClass(".past");
+    else if (currentTime > i) {
+        $("#" + i).addClass("past");
     }
     }
 };
