@@ -36,12 +36,24 @@ console.log(Object.keys(hour));
 
 //$(document).ready(function(){
     $("#btn9").on("click", function (){
-        var eventText9 = $("#9").val ();
+        var eventText9 = $("#9");
         console.log(eventText9);
-        localStorage.setItem("event", JSON.stringify(eventText9));
+        localStorage.setItem("event", JSON.stringify(eventText9.val()));
     });
 
+   /* function init () {
+        var storedEvent = JSON.parse(localStorage.getItem("event"));
+        console.log(storedEvent);
 
+    }*/
+
+    function renderEvents() {
+        var storedEvent = JSON.parse(localStorage.getItem("event"));
+        if (storedEvent !== null) {
+            document.getElementById("#9").val() = storedEvent.text;
+            console.log(storedEvent);
+        }
+    }
 
 //check current time to update event status
 function setStatus(){
