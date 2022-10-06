@@ -11,15 +11,29 @@ var pastTime = document.querySelector(".past");
 var descriptionEvent = document.querySelector(".description");
 
 
+var saveButton = document.querySelector(".saveBtn");
+
+//object hour containing time key and open strings for text input
 var hour = {9: '', 10: '', 11: '', 12: '', 13: '', 14: '', 15: '', 16: '', 17: ''};
 console.log(Object.keys(hour));
 
+// descriptionEvent.textContent
 
-//main code
+// //functions
+// function saveEventText() {
+//     for (var i = 9; i < 18; i++) {
 
-//functions
+//     var eventText = descriptionEvent[i].text;
+//     console.log(eventText);
 
-//time interval
+//     };
+
+//    localStorage.setItem("eventText", )
+
+
+
+
+//check current time to update event status
 function setStatus(){
     for (var i = 9; i < 18; i++) {
     
@@ -35,3 +49,8 @@ function setStatus(){
 
 setStatus();
 
+// //click event 
+// saveButton.on('click', function(event) {
+//     event.preventDefault();
+//     saveEventText();
+// }};
