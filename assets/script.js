@@ -17,7 +17,10 @@ var saveButton = document.querySelector(".saveBtn");
 var hour = {9: '', 10: '', 11: '', 12: '', 13: '', 14: '', 15: '', 16: '', 17: ''};
 console.log(Object.keys(hour));
 
-// descriptionEvent.textContent
+
+
+
+//    descriptionEvent.textContent
 
 // //functions
 // function saveEventText() {
@@ -30,6 +33,13 @@ console.log(Object.keys(hour));
 
 //    localStorage.setItem("eventText", )
 
+
+//$(document).ready(function(){
+    $("#btn9").on("click", function (){
+        var eventText9 = $("#9").val ();
+        console.log(eventText9);
+        localStorage.setItem("event", JSON.stringify(eventText9));
+    });
 
 
 
@@ -49,8 +59,12 @@ function setStatus(){
 
 setStatus();
 
-// //click event 
+//click event 
 // saveButton.on('click', function(event) {
 //     event.preventDefault();
 //     saveEventText();
 // }};
+
+//function init() to get stored items then render to page
+
+//}
