@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,11 +28,57 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+    <div class="container time-block">
       <!-- Timeblocks go here -->
+        <div class="row" id="9">
+          <div class="hour col-2">9AM</div>
+          <textarea class="description col-8"></textarea>
+          <div class="saveBtn col-2"></div>
+        </div>
+        <div class="row" id="10">
+          <div class="hour col-2">10AM</div>
+          <textarea class="description col-8"></textarea>
+          <div class="saveBtn col-2"></div>
+        </div>
+        <div class="row" id="11">
+          <div class="hour col-2">11AM</div>
+          <textarea class="description col-8"></textarea>
+          <div class="saveBtn col-2"></div>
+        </div>
+        <div class="row" id="12">
+          <div class="hour col-2">12PM</div>
+          <textarea class="description col-8"></textarea>
+          <div class="saveBtn col-2"></div>
+        </div>
+        <div class="row" id="13">
+          <div class="hour col-2">1PM</div>
+          <textarea class="description col-8"></textarea>
+          <div class="saveBtn col-2"></div>
+        </div>
+        <div class="row" id="14">
+          <div class="hour col-2">2PM</div>
+          <textarea class="description col-8"></textarea>
+          <div class="saveBtn col-2"></div>
+        </div>
+        <div class="row" id="15">
+          <div class="hour col-2">3PM</div>
+          <textarea class="description col-8"></textarea>
+          <div class="saveBtn col-2"></div>
+        </div>
+        <div class="row" id="16">
+          <div class="hour col-2">4PM</div>
+          <textarea class="description col-8"></textarea>
+          <div class="saveBtn col-2"></div>
+        </div>
+        <div class="row" id="17">
+          <div class="hour col-2">5PM</div>
+          <textarea class="description col-8"></textarea>
+          <div class="saveBtn col-2"></div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
