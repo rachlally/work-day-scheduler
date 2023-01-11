@@ -7,6 +7,9 @@ There is always a need to stay organized in life.  The motivation to create this
 
 Through beginning with a basic HTML and powering it through the use of jquery and third party APIs, I learned quite a bit.  I learned more about utilizing third-party APIs and how to create a dynamic HTML through these options.  I also learned more about local storage, how to store and how to recall this information.  Implementing jquery will be an extremely useful tool moving forward.
 
+## Technology
+
+This application was created with HTML, CSS, Moment.js and Jquery.
 
 ## Usage
 
